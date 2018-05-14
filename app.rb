@@ -4,11 +4,10 @@ class App < Sinatra::Base
 
   configure do
     enable :sessions
-    set :session_secret, "secret"
+    set :session_secret, "underhiseye"
   end
 
   get '/' do
-    @session = session
     erb :index
   end
 
