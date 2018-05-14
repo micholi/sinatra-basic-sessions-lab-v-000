@@ -4,11 +4,8 @@
     <title>Checkout</title>
   </head>
   <body>
-    <h1><%= @team.name%></h1>
-      <h2>Team Motto: <%= @team.motto %></h2>
-      <% @superheroes.each do |superhero| %>
-      <h2>Hero Name: <%= superhero.name %></h2>
-      <p>Hero Power: <%= superhero.power %></p>
+    <h2>Items in Your Cart:</h2>
+      <p>Hero Power: <%= @session["item"] %></p>
       <p>Hero Biography: <%= superhero.bio %></p>
       <% end %>
   </body>
