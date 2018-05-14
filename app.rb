@@ -13,7 +13,7 @@ class App < Sinatra::Base
 
   post '/checkout' do
     @session = session
-    params.each do |key, value|
+    params.each do |item, item_value|
       @session[key] = value
     end
     erb :checkout
